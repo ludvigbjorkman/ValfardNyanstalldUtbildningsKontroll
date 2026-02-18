@@ -50,6 +50,8 @@
       <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -111,7 +113,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="988.6666666666666,1010.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="892.6666666666666,1187.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -125,6 +127,7 @@
     <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="438.6666666666667,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
     <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_Config(&quot;Grade_Credential&quot;).ToString]" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="438.6666666666667,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
     <g:Grade_Login sap:VirtualizedContainerService.HintSize="438.6666666666667,282" sap2010:WorkflowViewState.IdRef="Grade_Login_1" in_DomainURL="https://ornskoldsvik.grade.se/LuvitAdmin/Login.aspx" in_ExpectedUser="[in_Config(&quot;Grade_ExpectedUser&quot;).ToString]" in_Password="[Password]" in_Username="[Username]" />
+    <g:Grade_NavigateMainMenu in_VerificationTitle="{x:Null}" sap:VirtualizedContainerService.HintSize="438.6666666666667,176.66666666666666" sap2010:WorkflowViewState.IdRef="Grade_NavigateMainMenu_1" in_NavigationPath="GRADE Portal,Gå till GRADE Portal" />
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.6666666666667,322" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Catches>
         <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">

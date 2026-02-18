@@ -183,7 +183,7 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="988.6666666666666,5650" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="892.6666666666666,5444.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sxl:XDocument" Name="DeserializedXMLDocument" />
       <Variable x:TypeArguments="x:Int32" Name="OepCaseID" />
@@ -261,7 +261,7 @@
         </Sequence>
       </If.Else>
     </If>
-    <If Condition="[in_testing]" DisplayName="IF IN TESTING" sap:VirtualizedContainerService.HintSize="522.6666666666666,86" sap2010:WorkflowViewState.IdRef="If_3">
+    <If Condition="[in_testing]" DisplayName="IF IN TESTING" sap:VirtualizedContainerService.HintSize="522.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -438,7 +438,7 @@
         <OutArgument x:TypeArguments="x:String" x:Key="out_CourseDate">[CourseDate]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <TryCatch DisplayName="Try Catch " sap:VirtualizedContainerService.HintSize="522.6666666666666,2978" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch " sap:VirtualizedContainerService.HintSize="522.6666666666666,2801.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="AddInternalMessageSuccessful" />
       </TryCatch.Variables>
@@ -449,7 +449,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Main event loop" sap:VirtualizedContainerService.HintSize="484,2692.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Main event loop" sap:VirtualizedContainerService.HintSize="484,2516" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -469,7 +469,6 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <g:Grade_NavigateMainMenu in_VerificationTitle="{x:Null}" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Grade_NavigateMainMenu_1" in_NavigationPath="GRADE Portal,Gå till GRADE Portal" />
           <g:NavigatePortalMenu sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="NavigatePortalMenu_1" in_NavigationPath="Hantera anmälningar,För administratörer" in_VerificationTitle="Hantera anmälningar för administratörer" />
           <g:GradePortalSearchForRegistration in_Status="{x:Null}" in_UserResponsible="{x:Null}" sap:VirtualizedContainerService.HintSize="450,334.6666666666667" sap2010:WorkflowViewState.IdRef="GradePortalSearchForRegistration_1" in_CourseDate="[CourseDate]" in_CourseToSearchFor="Yrkesintroduktion vård och omsorg" in_TypeOfCourse="Program" />
           <g:HandleCourseRegistrations DisplayName="Grade_HandleCourseRegistrations" sap:VirtualizedContainerService.HintSize="450,387.3333333333333" sap2010:WorkflowViewState.IdRef="HandleCourseRegistrations_1" in_ParticipantEmail="[EmployeeEmail]" in_ParticipantFirstName="[EmployeeFullName]" in_ParticipantLastName="[BossFullName]" in_ParticipantSSN="[EmployeeSSN]" in_RegisterAsExternal="True" in_RoleForParticipant="Deltagare" />
@@ -515,7 +514,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap2010:Annotation.AnnotationText="Regler vid BusinessException: &#xA;&#xA;Om vi är i testing, skippa OpenE interaktion helt&#xA;&#xA;Annars, nådde vi så långt att Transactionen inte längre kan köras om?&#xA;&#xA;Om den kan köras om, sätt status till inskickad igen och lägg till intern notering för att tracea.&#xA;&#xA;&#xA;Om den inte längre kan köras om, sätt till OepFailedStatus" sap:VirtualizedContainerService.HintSize="597.3333333333334,3290" sap2010:WorkflowViewState.IdRef="Sequence_50">
+            <Sequence sap2010:Annotation.AnnotationText="Regler vid BusinessException: &#xA;&#xA;Om vi är i testing, skippa OpenE interaktion helt&#xA;&#xA;Annars, nådde vi så långt att Transactionen inte längre kan köras om?&#xA;&#xA;Om den kan köras om, sätt status till inskickad igen och lägg till intern notering för att tracea.&#xA;&#xA;&#xA;Om den inte längre kan köras om, sätt till OepFailedStatus" sap:VirtualizedContainerService.HintSize="597.3333333333334,3113.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_50">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -523,7 +522,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="563.3333333333334,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;BUSINESS EXCEPTION OCCURED &quot; + exception.Message + &quot; BUT IN TEST MODE - NOT INTERACTING WITH OEP&quot;]" />
-              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.3333333333334,2826.6666666666665" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.3333333333334,2798" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If" Condition="[in_testing]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
@@ -540,14 +539,14 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_54" Message="[&quot;In testing so doing nothing&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_54" Level="Error" Message="[&quot;BusinessRuleException but in testing so not interacting with OpenE&quot;]" />
                           </Sequence>
                         </Sequence>
                       </ui:IfElseIfBlock.Then>
                     </ui:IfElseIfBlock>
                     <ui:IfElseIfBlock BlockType="Else" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
                       <ui:IfElseIfBlock.Then>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,2246.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,2218" sap2010:WorkflowViewState.IdRef="Sequence_66">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -562,7 +561,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </oc:Add_Internal_Message>
-                          <If Condition="[AddInternalMessageSuccessful]" DisplayName="If - Internal message was successfully sent" sap:VirtualizedContainerService.HintSize="382,86" sap2010:WorkflowViewState.IdRef="If_48">
+                          <If Condition="[AddInternalMessageSuccessful]" DisplayName="If - Internal message was successfully sent" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_48">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -611,7 +610,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="570,5815.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_123">
+            <Sequence sap:VirtualizedContainerService.HintSize="570,5862.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_123">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -619,17 +618,18 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="535.3333333333334,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_47" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;SYSTEMEXCEPTION OCCURED &quot; + exception.Message]" />
-              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="535.3333333333334,5530.666666666667" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="535.3333333333334,5667.333333333333" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If" Condition="[in_testing]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_10">
                       <ui:IfElseIfBlock.Then>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_112">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_59" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;SystemException but in testing so not interacting with OpenE&quot;]" />
                         </Sequence>
                       </ui:IfElseIfBlock.Then>
                     </ui:IfElseIfBlock>
