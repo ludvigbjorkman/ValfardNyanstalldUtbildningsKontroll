@@ -4,7 +4,7 @@
   "description": "Utbildningskontroll av nyanställda inom välfärd",
   "main": "Main.xaml",
   "dependencies": {
-    "Grade.WEBGUI": "[1.0.4-alpha]",
+    "Grade.WEBGUI": "[1.0.4-alpha.1]",
     "OpenEplatform.API_Windows": "[1.0.1-alpha]",
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.System.Activities": "[24.10.8]",
@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.16.0",
-  "projectVersion": "1.0.4-alpha.1",
+  "projectVersion": "1.0.4-alpha.2",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,

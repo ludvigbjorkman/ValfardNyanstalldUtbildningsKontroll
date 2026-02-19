@@ -183,7 +183,7 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="892.6666666666666,5444.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="2615.9999999999995,5502" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sxl:XDocument" Name="DeserializedXMLDocument" />
       <Variable x:TypeArguments="x:Int32" Name="OepCaseID" />
@@ -438,7 +438,7 @@
         <OutArgument x:TypeArguments="x:String" x:Key="out_CourseDate">[CourseDate]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <TryCatch DisplayName="Try Catch " sap:VirtualizedContainerService.HintSize="522.6666666666666,2801.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch " sap:VirtualizedContainerService.HintSize="522.6666666666666,2858.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="AddInternalMessageSuccessful" />
       </TryCatch.Variables>
@@ -449,7 +449,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Main event loop" sap:VirtualizedContainerService.HintSize="484,2516" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Main event loop" sap:VirtualizedContainerService.HintSize="484,2573.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -469,6 +469,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
+          <g:Grade_ReturnToPortalHomepage sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Grade_ReturnToPortalHomepage_1" />
           <g:NavigatePortalMenu sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="NavigatePortalMenu_1" in_NavigationPath="Hantera anmälningar,För administratörer" in_VerificationTitle="Hantera anmälningar för administratörer" />
           <g:GradePortalSearchForRegistration in_Status="{x:Null}" in_UserResponsible="{x:Null}" sap:VirtualizedContainerService.HintSize="450,334.6666666666667" sap2010:WorkflowViewState.IdRef="GradePortalSearchForRegistration_1" in_CourseDate="[CourseDate]" in_CourseToSearchFor="Yrkesintroduktion vård och omsorg" in_TypeOfCourse="Program" />
           <g:HandleCourseRegistrations DisplayName="Grade_HandleCourseRegistrations" sap:VirtualizedContainerService.HintSize="450,387.3333333333333" sap2010:WorkflowViewState.IdRef="HandleCourseRegistrations_1" in_ParticipantEmail="[EmployeeEmail]" in_ParticipantFirstName="[EmployeeFullName]" in_ParticipantLastName="[BossFullName]" in_ParticipantSSN="[EmployeeSSN]" in_RegisterAsExternal="True" in_RoleForParticipant="Deltagare" />
